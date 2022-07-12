@@ -59,7 +59,7 @@ const ConversionHandler: FunctionalComponent = () => {
             <TextArea
                 rows={30}
                 value={text}
-                onChange={(e): void => {
+                onChange={(e: { target: { value: string } }): void => {
                     setText(e.target.value);
                 }}
             />
