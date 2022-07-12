@@ -1,23 +1,32 @@
 import { FunctionalComponent, h } from 'preact';
-import { Link } from 'preact-router/match';
-import style from './style.css';
+import styled from 'styled-components';
+
+const Head = styled.header`
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 56px;
+    padding: 0;
+    background: #673ab7;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 50;
+`;
+const H1 = styled.h1`
+    float: left;
+    margin: 0;
+    padding: 0 15px;
+    font-size: 24px;
+    line-height: 56px;
+    font-weight: 400;
+    color: #fff;
+`;
 
 const Header: FunctionalComponent = () => {
     return (
-        <header class={style.header}>
-            <h1>Preact App</h1>
-            <nav>
-                <Link activeClassName={style.active} href="/">
-                    Home
-                </Link>
-                <Link activeClassName={style.active} href="/profile">
-                    Me
-                </Link>
-                <Link activeClassName={style.active} href="/profile/john">
-                    John
-                </Link>
-            </nav>
-        </header>
+        <Head>
+            <H1>Preact App</H1>
+        </Head>
     );
 };
 

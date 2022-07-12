@@ -1,19 +1,19 @@
 # conversion
 
 ## CLI Commands
-*   `npm install`: Installs dependencies
 
-*   `npm run dev`: Run a development, HMR server
+- `yarn install`: Installs dependencies
 
-*   `npm run serve`: Run a production-like server
+- `yarn dev`: Run a development, HMR server
 
-*   `npm run build`: Production-ready build
+- `yarn serve`: Run a production-like server
 
-*   `npm run lint`: Pass TypeScript files using ESLint
+- `yarn build`: Production-ready build
 
-*   `npm run test`: Run Jest and Enzyme with
-    [`enzyme-adapter-preact-pure`](https://github.com/preactjs/enzyme-adapter-preact-pure) for
-    your tests
+- `yarn lint`: Pass TypeScript files using ESLint
 
+- `yarn test`: Run Jest and Enzyme with
+  [`enzyme-adapter-preact-pure`](https://github.com/preactjs/enzyme-adapter-preact-pure) for
+  your tests
 
 For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
