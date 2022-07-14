@@ -11,6 +11,11 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 20px;
+    }
+}
 
 * {
     box-sizing: border-box;
@@ -19,7 +24,7 @@ body {
 #preact_root {
     height: 100%;
     --primary-color: #b42222;
-    --border-color: #232412;
+    --border-color: #00000039;
     /* #C4981F #C4611F #B52222 #A81DCC #231BC2 */
 }
 
